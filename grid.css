@@ -1,0 +1,88 @@
+/*DISTRIBUCION COLUMNAS AhmGrid 1.0
+by Adrián Herrero Montoya
+*/
+ :root {
+    --paddingX: 20px;
+    --margenesBox: 15px;
+    --heightBoxXXSmall: 165px;
+    --heightBoxXSmall: 235px;
+    --heightBoxSmall: 300px;
+    --heightBoxMedium: 370px;
+    --heightBoxLarge: 400px;
+  }
+
+
+ *[class*="dst"] {float:left;width: 100%;}
+
+ @media (max-width: 1000px) {
+    .box:not([class*="dst"]) {width: 100%;}
+ }
+
+@media (min-width: 1000px) {
+ *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
+ .box[class*="dst"] {margin-bottom: 0;}
+ 
+
+        /*UNA FILA*/
+            /**/
+            .dst6-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4))}
+            .dst6-3-3 > .box:first-child{width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dst6-3-3 > .box:nth-child(3n) {margin-right: 0;}
+            /**/
+            .dst3-3-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4));}
+            .dst3-3-3-3 > .box:nth-child(4n) {margin-right: 0;}
+            /**/    
+            .dst4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBox) * 2 / 3));}
+            .dst4-4-4 > .box:nth-child(3n) {margin-right: 0;}
+            /**/    
+            .dst3-3-6 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4));}
+            .dst3-3-6 > .box:nth-child(3n) {width: calc(2 * (25% - 18px) + var(--margenesBox));margin-right: 0;}
+            /**/
+            .dst4-8 > .box:nth-child(odd) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2)); margin-right: var(--margenesBox)}
+            .dst4-8 > .box:nth-child(even) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0;}
+            /**/
+            .dst8-4 > .box:nth-child(even) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dst8-4 > .box:nth-child(odd) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/
+            .dst9-3 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dst9-3 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/ 
+            .dst10-2 > .box:nth-child(even) {width: calc(20% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dst10-2 > .box:nth-child(odd) {width: calc(80% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/
+            .dst6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dst6-6 > .box:nth-child(2n) {margin-right: 0;}
+            /**/
+            .dst12 > .box {width: 100%; margin-right: 0;}
+            /**/
+            .dstNoticia > .box:nth-child(even) {width: 280px !important;margin-right: 0 !important;}
+            .dstNoticia > .box:nth-child(odd) {width: calc(100% - 280px - calc(var(--margenesBox))); margin-right: var(--margenesBox)}
+            /**/
+            .dstZonaFan > .box:nth-child(even) {width: 350px !important;margin-right: 0 !important;}
+            .dstZonaFan > .box:nth-child(odd) {width: calc(100% - 350px - calc(var(--margenesBox))); margin-right: var(--margenesBox)}
+
+        /*DOS FILAS*/
+            /**/
+            .dst12-6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dst12-6-6 > .box:first-child{width: 100%; margin-right: 0;}
+            .dst12-6-6 > .box:nth-child(3n) {margin-right: 0;}
+            /**/
+            .dst12-4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBox) * 2 / 3));}
+            .dst12-4-4-4 > .box:first-child{width: 100%; margin-right: 0;}
+            .dst12-4-4-4 > .box:nth-child(4n) {margin-right: 0;}
+
+
+        }
+
+        /*TAMAÑOS*/
+            .box.xxsmall {height: var(--heightBoxXXSmall);}
+            .box.xsmall {height: var(--heightBoxXSmall);}
+                .box.xsmall-xsmall {height: calc(var(--heightBoxXSmall) * 2 + var(--margenesBox));}
+            .box.small {height: var(--heightBoxSmall);}
+                .box.small-small {height: calc(var(--heightBoxSmall) * 2 + var(--margenesBox));}
+                .box.small-xsmall {height: calc(var(--heightBoxSmall) + var(--heightBoxXSmall) + var(--margenesBox));}
+                .box.small-xxsmall {height: calc(var(--heightBoxSmall) + var(--heightBoxXXSmall) + var(--margenesBox));}
+            .box.medium {height: var(--heightBoxMedium)}
+                .box.medium-medium {height: calc(var(--heightBoxMedium) * 2 + var(--margenesBox));}
+            .box.large {height: var(--heightBoxLarge)}
+                .box.large-large {height: calc(var(--heightBoxLarge) * 2 + var(--margenesBox));}
