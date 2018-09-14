@@ -93,7 +93,7 @@ by Adrián Herrero Montoya
 
 		*[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox); min-width: unset;}
 		.box[class*="dst"] {margin-bottom: 0;}
-		/*.box:not([class*="dstm"]) {width: 100%;}*/
+		.box:not([class*="dstm"]) {width: 100%;}
 
 
 		/*UNA FILA*/
