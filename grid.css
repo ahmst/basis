@@ -1,23 +1,36 @@
 /*DISTRIBUCION COLUMNAS AhmGrid 1.0
 by Adrián Herrero Montoya
 
- :root {
-    --paddingX: 20px;
-    --margenesBox: 15px;
-    --heightBoxXXSmall: 165px;
-    --heightBoxXSmall: 235px;
-    --heightBoxSmall: 300px;
-    --heightBoxMedium: 370px;
-    --heightBoxLarge: 400px;
-  }
+@media (min-width: 1000px) {
+	.box {
+		--paddingX: 20px;
+		--margenesBox: 10px;
+		--heightBoxXXSmall: 165px;
+		--heightBoxXSmall: 235px;
+		--heightBoxSmall: 300px;
+		--heightBoxMedium: 370px;
+		--heightBoxLarge: 400px;
+	}
+}
+@media (max-width: 1000px) {
+	.box {
+		--paddingX: 10px;
+		--margenesBox: 3px;
+		--heightBoxXXSmall: 165px;
+		--heightBoxXSmall: 235px;
+		--heightBoxSmall: 300px;
+		--heightBoxMedium: 370px;
+		--heightBoxLarge: 400px;
+	}
+}
+
 */
+/*-----------------------------GENERALES-----------------------------*/ 
 
- *[class*="dst"] {float:left;width: 100%;}
+*[class*="dst"] {float:left;width: 100%;}
 
- @media (max-width: 1000px) {
-    .box:not([class*="dst"]) {width: 100%;}
- }
 
+ /*-----------------------------DESKTOP-----------------------------*/ 
 @media (min-width: 1000px) {
  *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
  .box[class*="dst"] {margin-bottom: 0;}
@@ -74,15 +87,75 @@ by Adrián Herrero Montoya
 
         }
 
+
+/*-----------------------------MOVILES-----------------------------*/
+		@media (max-width:1000px) {
+
+		*[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox); min-width: unset;}
+		.box[class*="dst"] {margin-bottom: 0;}
+		/*.box:not([class*="dstm"]) {width: 100%;}*/
+
+
+		/*UNA FILA*/
+            /**/
+            .dstm6-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4))}
+            .dstm6-3-3 > .box:first-child{width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dstm6-3-3 > .box:nth-child(3n) {margin-right: 0;}
+            /**/
+            .dstm3-3-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4));}
+            .dstm3-3-3-3 > .box:nth-child(4n) {margin-right: 0;}
+            /**/    
+            .dstm4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBox) * 2 / 3));}
+            .dstm4-4-4 > .box:nth-child(3n) {margin-right: 0;}
+            /**/    
+            .dstm3-3-6 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4));}
+            .dstm3-3-6 > .box:nth-child(3n) {width: calc(2 * (25% - 18px) + var(--margenesBox));margin-right: 0;}
+            /**/
+            .dstm4-8 > .box:nth-child(odd) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2)); margin-right: var(--margenesBox)}
+            .dstm4-8 > .box:nth-child(even) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0;}
+            /**/
+            .dstm8-4 > .box:nth-child(even) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm8-4 > .box:nth-child(odd) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/
+            .dstm9-3 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm9-3 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/ 
+            .dstm10-2 > .box:nth-child(even) {width: calc(20% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm10-2 > .box:nth-child(odd) {width: calc(80% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/
+            .dstm6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dstm6-6 > .box:nth-child(2n) {margin-right: 0;}
+            /**/
+            .dstm12 > .box {width: 100%; margin-right: 0;}
+            /**/
+            .dstmNoticia > .box:nth-child(even) {width: 280px !important;margin-right: 0 !important;}
+            .dstmNoticia > .box:nth-child(odd) {width: calc(100% - 280px - calc(var(--margenesBox))); margin-right: var(--margenesBox)}
+            /**/
+            .dstmZonaFan > .box:nth-child(even) {width: 350px !important;margin-right: 0 !important;}
+            .dstmZonaFan > .box:nth-child(odd) {width: calc(100% - 350px - calc(var(--margenesBox))); margin-right: var(--margenesBox)}
+
+        /*DOS FILAS*/
+            /**/
+            .dstm12-6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dstm12-6-6 > .box:first-child{width: 100%; margin-right: 0;}
+            .dstm12-6-6 > .box:nth-child(3n) {margin-right: 0;}
+            /**/
+            .dstm12-4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBox) * 2 / 3));}
+            .dstm12-4-4-4 > .box:first-child{width: 100%; margin-right: 0;}
+            .dstm12-4-4-4 > .box:nth-child(4n) {margin-right: 0;}
+
+				}
+
+
         /*TAMAÑOS*/
-            .box.xxsmall {height: var(--heightBoxXXSmall);}
-            .box.xsmall {height: var(--heightBoxXSmall);}
-                .box.xsmall-xsmall {height: calc(var(--heightBoxXSmall) * 2 + var(--margenesBox));}
-            .box.small {height: var(--heightBoxSmall);}
-                .box.small-small {height: calc(var(--heightBoxSmall) * 2 + var(--margenesBox));}
-                .box.small-xsmall {height: calc(var(--heightBoxSmall) + var(--heightBoxXSmall) + var(--margenesBox));}
-                .box.small-xxsmall {height: calc(var(--heightBoxSmall) + var(--heightBoxXXSmall) + var(--margenesBox));}
-            .box.medium {height: var(--heightBoxMedium)}
-                .box.medium-medium {height: calc(var(--heightBoxMedium) * 2 + var(--margenesBox));}
-            .box.large {height: var(--heightBoxLarge)}
-                .box.large-large {height: calc(var(--heightBoxLarge) * 2 + var(--margenesBox));}
+		.box.xxsmall {height: var(--heightBoxXXSmall);}
+		.box.xsmall {height: var(--heightBoxXSmall);}
+			.box.xsmall-xsmall {height: calc(var(--heightBoxXSmall) * 2 + var(--margenesBox));}
+		.box.small {height: var(--heightBoxSmall);}
+			.box.small-small {height: calc(var(--heightBoxSmall) * 2 + var(--margenesBox));}
+			.box.small-xsmall {height: calc(var(--heightBoxSmall) + var(--heightBoxXSmall) + var(--margenesBox));}
+			.box.small-xxsmall {height: calc(var(--heightBoxSmall) + var(--heightBoxXXSmall) + var(--margenesBox));}
+		.box.medium {height: var(--heightBoxMedium)}
+			.box.medium-medium {height: calc(var(--heightBoxMedium) * 2 + var(--margenesBox));}
+		.box.large {height: var(--heightBoxLarge)}
+			.box.large-large {height: calc(var(--heightBoxLarge) * 2 + var(--margenesBox));}
