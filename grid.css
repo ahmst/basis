@@ -54,6 +54,9 @@ by Adrián Herrero Montoya
             .dst4-8 > .box:nth-child(odd) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2)); margin-right: var(--margenesBox)}
             .dst4-8 > .box:nth-child(even) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0;}
             /**/
+            .dst7-5 > .box:nth-child(even) {width: calc(41.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dst7-5 > .box:nth-child(odd) {width: calc(58.333% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
+            /**/
             .dst8-4 > .box:nth-child(even) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
             .dst8-4 > .box:nth-child(odd) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
@@ -113,6 +116,9 @@ by Adrián Herrero Montoya
             /**/
             .dstm4-8 > .box:nth-child(odd) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2)); margin-right: var(--margenesBox)}
             .dstm4-8 > .box:nth-child(even) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0;}
+            /**/
+            .dstm7-5 > .box:nth-child(even) {width: calc(41.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm7-5 > .box:nth-child(odd) {width: calc(58.333% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
             .dstm8-4 > .box:nth-child(even) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
             .dstm8-4 > .box:nth-child(odd) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
