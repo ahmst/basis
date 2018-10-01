@@ -34,6 +34,7 @@ by Adrián Herrero Montoya
  /*-----------------------------DESKTOP-----------------------------*/ 
 @media (min-width: 1000px) {
  *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
+ *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2)}
  .box[class*="dst"] {margin-bottom: 0;}
  
 
@@ -135,7 +136,8 @@ by Adrián Herrero Montoya
 /*-----------------------------MOVILES-----------------------------*/
 		@media (max-width:1000px) {
 
-		*[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox); min-width: unset;}
+        *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox); min-width: unset;}
+        *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2); min-width: unset;}
 		.box[class*="dst"] {margin-bottom: 0;}
 		.box:not([class*="dstm"]) {width: 100%;}
 
