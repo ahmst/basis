@@ -28,14 +28,14 @@ by Adrián Herrero Montoya
 */
 /*-----------------------------GENERALES-----------------------------*/ 
 
-*[class*="dst"] {float:left;width: 100%;}
+*[class*="dst"] {float:left;width: 100%;position: relative;}
 
 
  /*-----------------------------DESKTOP-----------------------------*/ 
 @media (min-width: 1000px) {
  *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
  *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2)}
- .box[class*="dst"] {margin-bottom: 0;}
+ .box[class*="dst"] {margin-bottom: 0; position: relative;}
  
 
         /*UNA FILA MARGEN TIPO 1*/
