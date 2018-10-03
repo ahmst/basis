@@ -28,13 +28,13 @@ by Adrián Herrero Montoya
 */
 /*-----------------------------GENERALES-----------------------------*/ 
 
-*[class*="dst"] {float:left;width: 100%;position: relative;}
+*[class*="dst"] {float:left;width: 100%;}
 
 
  /*-----------------------------DESKTOP-----------------------------*/ 
 @media (min-width: 1000px) {
- *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
- *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2)}
+ *[class*="dst"] > .box {float:left; position: relative;margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
+ *[class*="dst"].m2 > .box {float:left;position: relative; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2)}
  .box[class*="dst"] {margin-bottom: 0; position: relative;}
  
 
