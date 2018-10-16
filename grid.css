@@ -3,7 +3,8 @@ by Adrián Herrero Montoya
 
 @media (min-width: 1000px) {
 	.box {
-		--paddingX: 20px;
+        --paddingX: 20px;
+        --paddingY: 20px;
         --margenesBox: 10px;
         --margenesBoxM: 10px;
         --margenesBox2: 5px;
@@ -17,7 +18,8 @@ by Adrián Herrero Montoya
 }
 @media (max-width: 1000px) {
 	.box {
-		--paddingX: 10px;
+        --paddingX: 10px;
+        --paddingY: 10px;
 		--margenesBox: 3px;
 		--heightBoxXXSmall: 165px;
 		--heightBoxXSmall: 235px;
@@ -32,6 +34,7 @@ by Adrián Herrero Montoya
 
 *[class*="dst"] {float:left;width: 100%;position: relative;}
 .box {position: relative;}
+.box:not([class*="dst"]):not(.nostyle) {padding: --var(paddingY) --var(paddingX);}
 
 
  /*-----------------------------DESKTOP-----------------------------*/ 
