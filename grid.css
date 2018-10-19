@@ -34,7 +34,7 @@ by Adrián Herrero Montoya
 
 *[class*="dst"] {float:left;width: 100%;position: relative;}
 .box {position: relative;}
-.box:not([class*="dst"]):not(.nostyle) {padding: --var(paddingY) --var(paddingX);}
+.box:not([class*="dst"]):not(.nostyle) {padding: var(--paddingY) var(--paddingX);}
 
 
  /*-----------------------------DESKTOP-----------------------------*/ 
