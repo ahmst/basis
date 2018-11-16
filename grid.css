@@ -80,7 +80,7 @@ by Adrián Herrero Montoya
             .dst10-2 > .box:nth-child(even) {width: calc(16.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
             .dst10-2 > .box:nth-child(odd) {width: calc(83.333% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
-            .dst6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
+            .dst6-6 > .box {width:calc(50% - calc(var(--margenesBox) / 2))}
             .dst6-6 > .box:nth-child(2n) {margin-right: 0;}
             /**/
             .dst12 > .box {width: 100%; margin-right: 0;}
@@ -121,7 +121,7 @@ by Adrián Herrero Montoya
             .dst10-2.m2 > .box:nth-child(even) {width: calc(16.666% - calc(var(--margenesBox2) * 1 / 2));margin-right: 0; }
             .dst10-2.m2 > .box:nth-child(odd) {width: calc(83.333% - calc(var(--margenesBox2) * 1 / 2));margin-right: var(--margenesBox2)}
             /**/
-           .dst6-6.m2 > .box {width: calc(2 * (25% - calc(var(--margenesBox2) * 3 / 4)) + var(--margenesBox2));}
+           .dst6-6.m2 > .box {width: calc(50% - calc(var(--margenesBox2) / 2));}
            .dst6-6.m2 > .box:nth-child(2n) {margin-right: 0;}
            /**/
            .dst12.m2 > .box {width: 100%; margin-right: 0;}
