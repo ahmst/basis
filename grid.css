@@ -40,9 +40,7 @@ by Adrián Herrero Montoya
  /*-----------------------------DESKTOP-----------------------------*/ 
 @media (min-width: 1000px) {
  *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox)}
- *[class*="dst"].m1 > .box {float:left; margin-right: calc(var(--margenesBox) / 1.5);margin-bottom: calc(var(--margenesBox) / 1.5)}
- *[class*="dst"].m2 > .box {float:left; margin-right: calc(var(--margenesBox) / 2);margin-bottom: calc(var(--margenesBox) / 2)}
- *[class*="dst"].m3 > .box {float:left; margin-right: calc(var(--margenesBox) / 3);margin-bottom: calc(var(--margenesBox) / 3)}
+ *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2)}
  .box[class*="dst"] {margin-bottom: 0; }
  
 
@@ -145,10 +143,8 @@ by Adrián Herrero Montoya
 		@media (max-width:1000px) {
 
         *[class*="dst"] > .box {float:left; margin-right: var(--margenesBoxM);margin-bottom: var(--margenesBoxM); min-width: unset;}
-        *[class*="dst"].m1 > .box {float:left; margin-right: calc(var(--margenesBoxM) / 1.5);margin-bottom: calc(var(--margenesBoxM) / 1.5); min-width: unset;}
-        *[class*="dst"].m2 > .box {float:left; margin-right: calc(var(--margenesBoxM) / 2);margin-bottom: calc(var(--margenesBoxM) / 2); min-width: unset;}
-        *[class*="dst"].m3 > .box {float:left; margin-right: calc(var(--margenesBoxM) / 3);margin-bottom: calc(var(--margenesBoxM) / 3); min-width: unset;}
-        .box[class*="dst"] {margin-bottom: 0;}
+        *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBoxM2);margin-bottom: var(--margenesBoxM2); min-width: unset;}
+		.box[class*="dst"] {margin-bottom: 0;}
 		.box:not([class*="dstm"]) {width: 100%;}
 
 
