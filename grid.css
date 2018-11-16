@@ -184,7 +184,7 @@ by Adrián Herrero Montoya
             .dstm10-2 > .box:nth-child(even) {width: calc(20% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
             .dstm10-2 > .box:nth-child(odd) {width: calc(80% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
             /**/
-            .dstm6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBoxM) * 3 / 4)) + var(--margenesBoxM));}
+            .dstm6-6 > .box {width: calc(50% - calc(var(--margenesBoxM) / 2))}
             .dstm6-6 > .box:nth-child(2n) {margin-right: 0;}
             /**/
             .dstm12 > .box {width: 100%; margin-right: 0;}
