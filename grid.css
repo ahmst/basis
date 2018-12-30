@@ -1,7 +1,8 @@
-/*DISTRIBUCION COLUMNAS AhmGrid 1.0
+/*DISTRIBUCION COLUMNAS AhmGrid
 by Adrián Herrero Montoya
 
-@media (min-width: 1000px) {
+:root {--responsiveThreshold: 1000px;}
+@media (min-width: var(--responsiveThreshold)) {
 	.box {
         --paddingX: 20px;
         --paddingY: 20px;
@@ -16,7 +17,7 @@ by Adrián Herrero Montoya
 		--heightBoxLarge: 400px;
 	}
 }
-@media (max-width: 1000px) {
+@media (max-width: var(--responsiveThreshold)) {
 	.box {
         --paddingX: 10px;
         --paddingY: 10px;
