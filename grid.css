@@ -50,9 +50,6 @@ by Adrián Herrero Montoya
             .dst5.m2 > .box {width: calc(20% - calc(var(--margenesBox2) * 4 / 5));}
             .dst5 > .box:nth-child(5n) {margin-right: 0;}
 
-            .dstm5 > .box {width: calc(20% - calc(var(--margenesBox) * 4 / 5));}
-            .dstm5.m2 > .box {width: calc(20% - calc(var(--margenesBox2) * 4 / 5));}
-            .dstm5 > .box:nth-child(5n) {margin-right: 0;}
 
         /*UNA FILA MARGEN TIPO 1*/
             /**/
@@ -156,6 +153,12 @@ by Adrián Herrero Montoya
         *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2); min-width: unset;}
 		.box[class*="dst"] {margin-bottom: 0;}
 		.box:not([class*="dstm"]) {width: 100%;}
+
+    /*MISMA ANCHURA*/
+
+    .dstm5 > .box {width: calc(20% - calc(var(--margenesBox) * 4 / 5));}
+    .dstm5.m2 > .box {width: calc(20% - calc(var(--margenesBox2) * 4 / 5));}
+    .dstm5 > .box:nth-child(5n) {margin-right: 0;}
 
 
 		/*UNA FILA*/
