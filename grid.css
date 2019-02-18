@@ -44,6 +44,12 @@ by Adrián Herrero Montoya
  .box[class*="dst"] {margin-bottom: 0; }
  
 
+
+/*MISMA ANCHURA*/
+            /**/
+            .dst5 > .box {width: calc(20% - calc(var(--margenesBox) * 4 / 5));}
+            .dst5 > .box:nth-child(5n) {margin-right: 0;}
+
         /*UNA FILA MARGEN TIPO 1*/
             /**/
             .dst6-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4))}
