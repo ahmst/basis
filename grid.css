@@ -1,14 +1,12 @@
-/*DISTRIBUCION COLUMNAS AhmGrid 1.0
+/*DISTRIBUCION COLUMNAS AhmGrid
 by Adrián Herrero Montoya
 
 @media (min-width: 1000px) {
 	.box {
         --paddingX: 20px;
         --paddingY: 20px;
-        --margenesBox: 10px;
-        --margenesBoxM: 10px;
+        --margenesBox: 30px;
         --margenesBox2: 5px;
-        --margenesBoxM2: 5px;
 		--heightBoxXXSmall: 165px;
 		--heightBoxXSmall: 235px;
 		--heightBoxSmall: 300px;
@@ -20,7 +18,8 @@ by Adrián Herrero Montoya
 	.box {
         --paddingX: 10px;
         --paddingY: 10px;
-		--margenesBox: 3px;
+        --margenesBox: 100px;
+        --margenesBox2: 100px;
 		--heightBoxXXSmall: 165px;
 		--heightBoxXSmall: 235px;
 		--heightBoxSmall: 300px;
@@ -148,60 +147,60 @@ by Adrián Herrero Montoya
 /*-----------------------------MOVILES-----------------------------*/
 		@media (max-width:1000px) {
 
-        *[class*="dst"] > .box {float:left; margin-right: var(--margenesBoxM);margin-bottom: var(--margenesBoxM); min-width: unset;}
-        *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBoxM2);margin-bottom: var(--margenesBoxM2); min-width: unset;}
+        *[class*="dst"] > .box {float:left; margin-right: var(--margenesBox);margin-bottom: var(--margenesBox); min-width: unset;}
+        *[class*="dst"].m2 > .box {float:left; margin-right: var(--margenesBox2);margin-bottom: var(--margenesBox2); min-width: unset;}
 		.box[class*="dst"] {margin-bottom: 0;}
 		.box:not([class*="dstm"]) {width: 100%;}
 
 
 		/*UNA FILA*/
             /**/
-            .dstm6-3-3 > .box {width: calc(25% - calc(var(--margenesBoxM) * 3 / 4))}
-            .dstm6-3-3 > .box:first-child{width: calc(2 * (25% - calc(var(--margenesBoxM) * 3 / 4)) + var(--margenesBoxM));}
+            .dstm6-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4))}
+            .dstm6-3-3 > .box:first-child{width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
             .dstm6-3-3 > .box:nth-child(3n) {margin-right: 0;}
             /**/
-            .dstm3-3-3-3 > .box {width: calc(25% - calc(var(--margenesBoxM) * 3 / 4));}
+            .dstm3-3-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4));}
             .dstm3-3-3-3 > .box:nth-child(4n) {margin-right: 0;}
             /**/    
-            .dstm4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBoxM) * 2 / 3));}
+            .dstm4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBox) * 2 / 3));}
             .dstm4-4-4 > .box:nth-child(3n) {margin-right: 0;}
             /**/    
-            .dstm3-3-6 > .box {width: calc(25% - calc(var(--margenesBoxM) * 3 / 4));}
-            .dstm3-3-6 > .box:nth-child(3n) {width: calc(2 * (25% - 18px) + var(--margenesBoxM));margin-right: 0;}
+            .dstm3-3-6 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4));}
+            .dstm3-3-6 > .box:nth-child(3n) {width: calc(2 * (25% - 18px) + var(--margenesBox));margin-right: 0;}
             /**/
-            .dstm4-8 > .box:nth-child(odd) {width: calc(33.333% - calc(var(--margenesBoxM) * 1 / 2)); margin-right: var(--margenesBoxM)}
-            .dstm4-8 > .box:nth-child(even) {width: calc(66.666% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0;}
+            .dstm4-8 > .box:nth-child(odd) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2)); margin-right: var(--margenesBox)}
+            .dstm4-8 > .box:nth-child(even) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0;}
             /**/
-            .dstm7-5 > .box:nth-child(even) {width: calc(41.666% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
-            .dstm7-5 > .box:nth-child(odd) {width: calc(58.333% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
+            .dstm7-5 > .box:nth-child(even) {width: calc(41.666% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm7-5 > .box:nth-child(odd) {width: calc(58.333% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
-            .dstm8-4 > .box:nth-child(even) {width: calc(33.333% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
-            .dstm8-4 > .box:nth-child(odd) {width: calc(66.666% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
+            .dstm8-4 > .box:nth-child(even) {width: calc(33.333% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm8-4 > .box:nth-child(odd) {width: calc(66.666% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
-            .dstm3-9 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
-            .dstm3-9 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
+            .dstm3-9 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm3-9 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
-            .dstm2-10 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
-            .dstm2-10 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
+            .dstm2-10 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm2-10 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
-            .dstm9-3 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
-            .dstm9-3 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
+            .dstm9-3 > .box:nth-child(even) {width: calc(25% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm9-3 > .box:nth-child(odd) {width: calc(75% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/ 
-            .dstm10-2 > .box:nth-child(even) {width: calc(20% - calc(var(--margenesBoxM) * 1 / 2));margin-right: 0; }
-            .dstm10-2 > .box:nth-child(odd) {width: calc(80% - calc(var(--margenesBoxM) * 1 / 2));margin-right: var(--margenesBoxM)}
+            .dstm10-2 > .box:nth-child(even) {width: calc(20% - calc(var(--margenesBox) * 1 / 2));margin-right: 0; }
+            .dstm10-2 > .box:nth-child(odd) {width: calc(80% - calc(var(--margenesBox) * 1 / 2));margin-right: var(--margenesBox)}
             /**/
-            .dstm6-6 > .box {width: calc(50% - calc(var(--margenesBoxM) / 2))}
+            .dstm6-6 > .box {width: calc(50% - calc(var(--margenesBox) / 2))}
             .dstm6-6 > .box:nth-child(2n) {margin-right: 0;}
             /**/
             .dstm12 > .box {width: 100%; margin-right: 0;}
 
         /*DOS FILAS*/
             /**/
-            .dstm12-6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBoxM) * 3 / 4)) + var(--margenesBoxM));}
+            .dstm12-6-6 > .box {width: calc(2 * (25% - calc(var(--margenesBox) * 3 / 4)) + var(--margenesBox));}
             .dstm12-6-6 > .box:first-child{width: 100%; margin-right: 0;}
             .dstm12-6-6 > .box:nth-child(3n) {margin-right: 0;}
             /**/
-            .dstm12-4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBoxM) * 2 / 3));}
+            .dstm12-4-4-4 > .box {width: calc(33.333% - calc(var(--margenesBox) * 2 / 3));}
             .dstm12-4-4-4 > .box:first-child{width: 100%; margin-right: 0;}
             .dstm12-4-4-4 > .box:nth-child(4n) {margin-right: 0;}
 
