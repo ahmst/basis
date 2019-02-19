@@ -49,6 +49,10 @@ by Adrián Herrero Montoya
             .dst5 > .box {width: calc(20% - calc(var(--margenesBox) * 4 / 5));}
             .dst5.m2 > .box {width: calc(20% - calc(var(--margenesBox2) * 4 / 5));}
             .dst5 > .box:nth-child(5n) {margin-right: 0;}
+            
+            .dst7 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox) * 6 / 7));}
+            .dst7.m2 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox2) * 6 / 7));}
+            .dst7 > .box:nth-child(7n) {margin-right: 0;}
 
 
         /*UNA FILA MARGEN TIPO 1*/
