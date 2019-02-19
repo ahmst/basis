@@ -43,40 +43,6 @@ by Adrián Herrero Montoya
  .box[class*="dst"] {margin-bottom: 0; }
  
 
-
-/*MISMA ANCHURA*/
-            /**/
-            .dst3 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox) * 2 / 3));}
-            .dst3.m2 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox2) * 2 / 3));}
-            .dst3 > .box:nth-child(3n) {margin-right: 0;}
-
-                @media (max-width:1000px) {
-                .dstm3 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox) * 2 / 3));}
-                .dstm3.m2 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox2) * 2 / 3));}
-                .dstm3 > .box:nth-child(3n) {margin-right: 0;}
-                }
-
-            .dst5 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox) * 4 / 5));}
-            .dst5.m2 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox2) * 4 / 5));}
-            .dst5 > .box:nth-child(5n) {margin-right: 0;}
-
-                @media (max-width:1000px) {
-                .dstm5 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox) * 4 / 5));}
-                .dstm5.m2 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox2) * 4 / 5));}
-                .dstm5 > .box:nth-child(5n) {margin-right: 0;}
-                }
-            
-            .dst7 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox) * 6 / 7));}
-            .dst7.m2 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox2) * 6 / 7));}
-            .dst7 > .box:nth-child(7n) {margin-right: 0;}
-
-                @media (max-width:1000px) { 
-                .dstm7 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox) * 6 / 7));}
-                .dstm7.m2 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox2) * 6 / 7));}
-                .dstm7 > .box:nth-child(7n) {margin-right: 0;} 
-                }
-
-
         /*UNA FILA MARGEN TIPO 1*/
             /**/
             .dst6-3-3 > .box {width: calc(25% - calc(var(--margenesBox) * 3 / 4))}
@@ -252,4 +218,48 @@ by Adrián Herrero Montoya
 		.box.medium {height: var(--heightBoxMedium)}
 			.box.medium-medium {height: calc(var(--heightBoxMedium) * 2 + var(--margenesBox));}
 		.box.large {height: var(--heightBoxLarge)}
-			.box.large-large {height: calc(var(--heightBoxLarge) * 2 + var(--margenesBox));}
+            .box.large-large {height: calc(var(--heightBoxLarge) * 2 + var(--margenesBox));}
+            
+
+
+
+
+
+
+
+
+
+
+
+            /*BETA*/
+
+            
+/*MISMA ANCHURA*/
+            /**/
+            @media (min-width:1000px) {
+            .dst3 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox) * 2 / 3));}
+            .dst3.m2 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox2) * 2 / 3));}
+            .dst3 > .box:nth-child(3n) {margin-right: 0;}
+
+            .dst5 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox) * 4 / 5));}
+            .dst5.m2 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox2) * 4 / 5));}
+            .dst5 > .box:nth-child(5n) {margin-right: 0;}
+
+            .dst7 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox) * 6 / 7));}
+            .dst7.m2 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox2) * 6 / 7));}
+            .dst7 > .box:nth-child(7n) {margin-right: 0;}
+            }
+
+            @media (max-width:1000px) {
+            .dstm3 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox) * 2 / 3));}
+            .dstm3.m2 > .box {width: calc(calc(100% / 3) - calc(var(--margenesBox2) * 2 / 3));}
+            .dstm3 > .box:nth-child(3n) {margin-right: 0;}
+            
+            .dstm5 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox) * 4 / 5));}
+            .dstm5.m2 > .box {width: calc(calc(100% / 5) - calc(var(--margenesBox2) * 4 / 5));}
+            .dstm5 > .box:nth-child(5n) {margin-right: 0;}
+
+            .dstm7 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox) * 6 / 7));}
+            .dstm7.m2 > .box {width: calc(calc(100% / 7) - calc(var(--margenesBox2) * 6 / 7));}
+            .dstm7 > .box:nth-child(7n) {margin-right: 0;} 
+            }
