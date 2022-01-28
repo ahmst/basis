@@ -7,6 +7,12 @@
 .x-left {display: flex;justify-content: flex-start;}
 .x-center {display: flex;justify-content: center;}
 
+/*TAMAÑOS*/
+.y-50 {height: 50%;}
+.y-100 {height: 100%;}
+.x-50 {width: 50%;}
+.x-100 {width: 100%;}
+
 /*FILAS, X > HORIZONTAL (FILA INDIA), Y > VERTICAL*/
 .x-group {display: flex;flex-direction: row}
 .y-group {display: flex;flex-direction: column}
